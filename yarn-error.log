@@ -1,0 +1,46 @@
+Arguments: 
+  /Users/eddy/.nvm/versions/node/v11.11.0/bin/node /usr/local/Cellar/yarn/1.22.0/libexec/bin/yarn.js add bootstrap^
+
+PATH: 
+  /usr/local/opt/python/libexec/bin:/Users/eddy/.nvm/versions/node/v11.11.0/bin:/Users/eddy/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/opt/X11/bin:/Applications/Wireshark.app/Contents/MacOS:/usr/local/opt/mysql-client/bin:/usr/local/opt/ruby/bin:/opt/flutter/bin/:/opt/android-sdk/platform-tools/:/opt/apache-ant-1.10.5/bin
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  11.11.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/bootstrap%5E: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.0/libexec/lib/cli.js:66975:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.22.0/libexec/lib/cli.js:140727:22)
+      at Request.emit (events.js:197:13)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.0/libexec/lib/cli.js:141699:10)
+      at Request.emit (events.js:197:13)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.0/libexec/lib/cli.js:141621:12)
+      at Object.onceWrapper (events.js:285:13)
+      at IncomingMessage.emit (events.js:202:15)
+      at endReadableNT (_stream_readable.js:1132:12)
+      at processTicksAndRejections (internal/process/next_tick.js:76:17)
+
+npm manifest: 
+  {
+    "name": "christophemaillot.fr",
+    "version": "1.0.0",
+    "description": "eleventy project for christophemaillot.fr project",
+    "main": "main.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Christophe Maillot <christophe.maillot@gmail.com>",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

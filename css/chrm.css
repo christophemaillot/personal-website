@@ -1,0 +1,158 @@
+a {
+  color: #336677;
+}
+
+a:active {
+  color: #336677;
+}
+
+.short {
+  display: none;
+}
+
+.long {
+  display: block;
+}
+
+@media (max-width: 512px) {
+  .short {
+    display: block;
+  }
+  .long {
+    display: none;
+  }
+}
+
+.header {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  padding-left: 10.5px;
+  padding-right: 10.5px;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 4px #f0f0f0;
+          box-shadow: 0px 4px 4px #f0f0f0;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+
+.header img {
+  float: left;
+  width: 34px;
+  height: 34px;
+  margin-top: 4px;
+  margin-right: 10.5px;
+}
+
+.header .title {
+  float: left;
+  font-weight: 600;
+  color: #336677;
+  letter-spacing: 1.2px;
+}
+
+.header ul {
+  float: right;
+  height: 42px;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 10.5px;
+  list-style: none;
+}
+
+.header ul li {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 21px;
+}
+
+.content {
+  margin-top: 42px;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centerbox {
+  color: #404040;
+  position: relative;
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 128px;
+  line-height: 1.6em;
+}
+
+.centerbox .left {
+  width: 440px;
+}
+
+.centerbox .right {
+  position: absolute;
+  top: left;
+  right: 0px;
+  width: 180px;
+  float: right;
+  top: 0px;
+  text-align: right;
+}
+
+.centerbox .right img {
+  border-radius: 64px;
+  -webkit-box-shadow: 4px 4px 4px #E0E0E0;
+          box-shadow: 4px 4px 4px #E0E0E0;
+}
+
+.centerbox h1 {
+  margin-bottom: 48px;
+  font-size: 1.4em;
+}
+
+.centerbox p {
+  text-align: justify;
+}
+
+.centerbox ul {
+  display: block;
+}
+
+.centerbox ul li {
+  display: block;
+}
+
+.footer {
+  width: 100%;
+  font-size: 0.8em;
+  position: fixed;
+  bottom: 0px;
+  height: 48px;
+  line-height: 48px;
+  background-color: #F0F0F0;
+  text-align: center;
+}
+
+.footer ul {
+  display: block;
+  width: 100%;
+  list-style: none;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#gallery {
+  width: 1024px;
+  margin-top: auto;
+  margin-right: auto;
+  padding-top: 32px;
+}
+
+#gallery img {
+  padding: 2px;
+}
+/*# sourceMappingURL=chrm.css.map */

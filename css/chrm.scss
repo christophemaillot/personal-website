@@ -1,0 +1,161 @@
+$green: #336677;
+
+$header-height: 42px;
+$header-bgcolor: white;
+$header-shadow: 0px 4px 4px #f0f0f0;
+
+a {
+    color: $green;
+}
+
+a:active {
+    color: $green;
+}
+
+
+.short {
+    display: none;
+}
+.long {
+    display: block;
+}
+
+@media (max-width: 512px) { 
+    .short {
+        display: block;
+    }
+    .long {
+        display: none;
+    }
+}
+
+.header {
+    width: 100%;
+    height: $header-height;
+    line-height: $header-height;
+    padding-left: $header-height / 4;
+    padding-right: $header-height / 4;
+    background-color: $header-bgcolor;
+    box-shadow: $header-shadow;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+
+    img {
+        float: left;
+        width: $header-height - 8px;
+        height: $header-height - 8px;
+        margin-top: 4px;
+        margin-right: $header-height/4;
+    }
+
+    .title {
+        float: left;
+        font-weight: 600;
+        color: $green;
+        letter-spacing: 1.2px;
+    }
+
+    ul {
+        float: right;
+        height: $header-height;
+        padding: 0px;
+        margin: 0px;
+        margin-right: $header-height/4;
+        list-style: none;
+
+        li {
+            float: left;
+            padding: 0px;
+            margin: 0px;
+            margin-left: $header-height/2;
+        }
+    }
+}
+
+.content {
+    margin-top: $header-height;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerbox {
+    color: #404040;
+    position: relative;
+
+    .left {
+        width: 440px;
+    }
+
+    .right {
+        position: absolute;
+        top: left;
+        right: 0px;
+
+        width: 180px;
+        float: right;
+        top: 0px;
+        text-align: right;;
+
+        img {
+            border-radius:64px;
+            box-shadow: 4px 4px 4px #E0E0E0;
+        }
+    }
+
+    h1 {
+        margin-bottom: 48px;
+        font-size: 1.4em;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    ul {
+        display: block;
+        li {
+            display: block;
+        }
+    }
+
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 128px;
+    line-height: 1.6em;
+}
+
+.footer {
+    width: 100%;
+    font-size: 0.8em;
+    position: fixed;
+    bottom: 0px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #F0F0F0;
+    text-align: center;
+
+    ul {
+        display: block;
+        width: 100%;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+}
+
+#gallery {
+    width: 1024px;
+    margin-top: auto;
+    margin-right: auto;
+    img {
+        padding: 2px;
+    } 
+    padding-top: 32px;
+}
