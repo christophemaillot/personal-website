@@ -1,0 +1,17 @@
+{% extends "template.njk" %}
+
+{% block content %}
+
+<div id="postlist">
+  <ul>
+{%- for blog in collections.blog -%}
+    <li>
+      <img class="icon" src="/images/icons/document.png" alt="post icon" /> 
+      <div class="title"><a href="/blog/{{blog.data.title | slug}}">{{ blog.data.title}}</a></div>
+      <div class="date">{{ blog.data.lastupdate | date("dd/mm/YYY")}}</div>  
+    </li>
+{%- endfor -%}
+  </ul>
+</div>
+
+{% endblock %}
